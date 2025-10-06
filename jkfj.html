@@ -1,2 +1,52 @@
+Great! Your number `0612557271` will be converted to WhatsApp format:
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfunv0oojKov-DO0tEVE6eOgeyzLvSDTVy3NXFrbZ2ubaLr-w/viewform?embedded=true" width="640" height="451" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+- *255612557271* (remove leading 0 and add country code 255 for Tanzania)
+
+---
+
+✅ Updated WhatsApp Order Form (with your number):
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delivery Order</title>
+</head>
+<body>
+  <h2>Place Your Order</h2>
+  <form>
+    <label>Your Name:</label><br>
+    <input type="text" id="name" required><br><br>
+
+    <label>What do you need?</label><br>
+    <textarea id="order" rows="4" cols="30" required></textarea><br><br>
+
+    <button type="button" onclick="sendToWhatsApp()">Send Order</button>
+  </form>
+
+  <script>
+    function sendToWhatsApp() {
+      var name = document.getElementById("name").value;
+      var order = document.getElementById("order").value;
+      var phone = "255612557251"; // Your WhatsApp number
+
+      var message = "Name: " + name + "%0AOrder: " + order;
+      var url = "https://wa.me/" + phone + "?text=" + message;
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
+```
+
+---
+
+✅ How to host this online for free:
+1. *Go to Netlify* or *GitHub Pages*  
+2. Upload this file (as `.html`)  
+3. It will give you a link like:  
+   `https://yourbusiness.netlify.app`
+
+---
+
+Would you like me to guide you through *hosting on Netlify (easy + free)?*
