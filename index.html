@@ -2,61 +2,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Taarifa za Mwanafunzi</title>
+  <title>Delivery Form</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: aqua;
-      margin: 20px;
-      font-size: 15px;
-    }
-    label {
-      font-weight: bold;
+      background-color: #f2f2f2;
+      margin: 40px;
     }
     h1 {
-      color: green;
-      font-weight: bold;
+      color: #333;
     }
-    button {
-      background-color: red;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 6px;
-      width: 100px;
-      height: 33px;
-      color: white;
-      cursor: pointer;
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 400px;
     }
     input, textarea {
-      width: 200px;
+      width: 100%;
       padding: 10px;
+      margin-top: 8px;
       margin-bottom: 15px;
       border-radius: 4px;
       border: 1px solid #ccc;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
     }
   </style>
 </head>
 <body>
 
-  <h1>TAFADHALI JAZA FORM IFUATAYO</h1>
+  <h1>Agiza Huduma ya Delivery</h1>
 
-  <form action="https://docs.google.com/forms/d/e/12JGuht20sDFg0Mzu855GY2jtWAYIScrOeV2i3_UVXR8/formResponse" method="POST" target="_self">
-    <label>NAME:</label><br>
-<input type="text" name="entry.1111111111" required><br><br>
+  <form action="https://formsubmit.co/nestorypalmer@gmail.com" method="POST">
+    
+    <label>Jina Kamili:</label>
+    <input type="text" name="jina" required>
 
-    <label>EMAIL:</label><br>
-    <input type="email" name="entry.2222222222" required><br><br>
+    <label>Namba ya Simu:</label>
+    <input type="tel" name="simu" required>
+<label>Anwani ya kupeleka mzigo:</label>
+    <textarea name="anwani" rows="3" required></textarea>
 
-    <label>AGE:</label><br>
-    <input type="number" name="entry.3333333333"><br><br>
+    <label>Unahitaji nini?</label>
+    <textarea name="hitaji" rows="3" required></textarea>
 
-    <label>LEVEL:</label><br>
-    <input type="text" name="entry.4444444444"><br><br>
+    <!-- Hidden settings -->
+    <input type="hidden" name="_subject" value="Ombi Jipya la Delivery">
+    <input type="hidden" name="_next" value="https://example.com/asante.html">
+    <input type="text" name="_honey" style="display:none">
 
-    <label>PHONE:</label><br>
-    <input type="tel" name="entry.5555555555"><br><br>
-
-    <button type="submit">SEND HERE</button>
+    <button type="submit">Tuma Ombi</button>
   </form>
 
 </body>
